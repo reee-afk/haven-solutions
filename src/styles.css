@@ -1,0 +1,167 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Haven Solutions design system.
+ * Near-black canvas, bone-white light bands, single molten ember accent.
+ * All colors in oklch. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 12px);
+  --radius-3xl: calc(var(--radius) + 20px);
+
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ember: var(--ember);
+  --color-ember-soft: var(--ember-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-bone: var(--bone);
+  --color-bone-foreground: var(--bone-foreground);
+  --color-bone-muted: var(--bone-muted);
+  --color-bone-border: var(--bone-border);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* light canvas */
+  --background: oklch(0.975 0.003 85);
+  --foreground: oklch(0.19 0.006 60);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.19 0.006 60);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.19 0.006 60);
+
+  --primary: oklch(0.62 0.222 33);
+  --primary-foreground: oklch(0.99 0.004 80);
+  --ember: oklch(0.62 0.222 33);
+  --ember-soft: oklch(0.76 0.17 52);
+
+  --secondary: oklch(0.94 0.004 85);
+  --secondary-foreground: oklch(0.19 0.006 60);
+  --muted: oklch(0.94 0.004 85);
+  --muted-foreground: oklch(0.52 0.008 70);
+  --accent: oklch(0.91 0.006 75);
+  --accent-foreground: oklch(0.19 0.006 60);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0.003 80);
+  --border: oklch(0.19 0.006 60 / 12%);
+  --input: oklch(0.19 0.006 60 / 16%);
+  --ring: oklch(0.62 0.222 33);
+
+  /* inverted (ink) band */
+  --bone: oklch(0.17 0.006 60);
+  --bone-foreground: oklch(0.97 0.004 80);
+  --bone-muted: oklch(0.7 0.008 70);
+  --bone-border: oklch(1 0 0 / 14%);
+
+  --gradient-ember: linear-gradient(100deg, var(--ember), var(--ember-soft));
+  --shadow-lift: 0 28px 60px -30px oklch(0.19 0.006 60 / 0.25);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    font-weight: 500;
+  }
+
+  ::selection {
+    background: var(--ember);
+    color: var(--primary-foreground);
+  }
+}
+
+@utility surface-ink {
+  background-color: var(--bone);
+  color: var(--bone-foreground);
+}
+
+@utility text-ember-gradient {
+  background: var(--gradient-ember);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@utility pill-ember {
+  background: var(--gradient-ember);
+  color: var(--primary-foreground);
+  border-radius: 999px;
+}
+
+@utility lift {
+  transition:
+    transform 0.5s var(--ease-out-soft),
+    box-shadow 0.5s var(--ease-out-soft);
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@utility marquee-track {
+  animation: haven-marquee 32s linear infinite;
+}
+
+@keyframes haven-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
