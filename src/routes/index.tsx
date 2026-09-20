@@ -512,15 +512,17 @@ function Index() {
                 <span className="eyebrow text-muted-foreground">Sample</span>
               </figcaption>
             </figure>
-            <figure className="lift self-start overflow-hidden rounded-3xl border border-border bg-card">
-              <img
-                src={sampleWebsite}
-                alt="Sample website design — Haven Solutions"
-                loading="lazy"
-                width={1200}
-                height={912}
-                className="aspect-[4/3] w-full object-cover object-top"
-              />
+            <figure className="lift flex flex-col overflow-hidden rounded-3xl border border-border bg-card">
+              <div className="min-h-0 flex-1">
+                <img
+                  src={sampleWebsite}
+                  alt="Sample website design — Haven Solutions"
+                  loading="lazy"
+                  width={1200}
+                  height={912}
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
               <figcaption className="flex items-center justify-between p-6">
                 <span className="font-display text-lg">Website design</span>
                 <span className="eyebrow text-muted-foreground">Sample</span>
