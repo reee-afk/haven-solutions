@@ -538,9 +538,12 @@ function Index() {
                 Demo
               </span>
               <div>
-                <h3 className="font-display text-2xl text-bone-foreground">Live chatbot demo</h3>
+                <h3 className="font-display text-2xl text-bone-foreground">
+                  Print &amp; marketing collateral
+                </h3>
                 <p className="mt-2 text-sm text-bone-muted">
-                  A 24/7 assistant that answers questions and captures leads.
+                  Flyers, brochures and signage that look as sharp offline as your brand does
+                  online.
                 </p>
               </div>
             </article>
@@ -549,9 +552,9 @@ function Index() {
                 Demo
               </span>
               <div>
-                <h3 className="font-display text-2xl">Business dashboard demo</h3>
+                <h3 className="font-display text-2xl">Google Business Profile</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Bookings, reviews and reminders in one simple view.
+                  A fully optimized profile that helps customers find, trust and choose you first.
                 </p>
               </div>
             </article>
