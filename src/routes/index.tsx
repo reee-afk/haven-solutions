@@ -3,7 +3,8 @@ import { Clapperboard, Globe, Palette } from "lucide-react";
 import heroGlassCards from "@/assets/hero-glass-cards.png.asset.json";
 import sampleBrand from "@/assets/sample-brand.webp";
 import sampleWebsite from "@/assets/sample-website.webp";
-import sampleSocial from "@/assets/sample-social.jpg";
+import sampleSocial from "@/assets/sample-social.webp";
+import samplePrint from "@/assets/sample-print.webp";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -525,33 +526,49 @@ function Index() {
               </figcaption>
             </figure>
             <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
-              <img
-                src={sampleSocial}
-                alt="Sample social media content design — Haven Solutions"
-                loading="lazy"
-                width={1200}
-                height={912}
-                className="aspect-[4/3] w-full object-cover"
-              />
+              <div className="relative">
+                <img
+                  src={sampleSocial}
+                  alt="Sample social media content design — Haven Solutions"
+                  loading="lazy"
+                  width={1200}
+                  height={912}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <span className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
+                  Demo
+                </span>
+              </div>
               <figcaption className="flex items-center justify-between p-6">
                 <span className="font-display text-lg">Social media post set</span>
                 <span className="eyebrow text-muted-foreground">Sample</span>
               </figcaption>
             </figure>
-            <article className="lift flex flex-col justify-between rounded-3xl surface-ink p-7">
-              <span className="rounded-full border border-bone-border px-3 py-1 text-[11px] font-semibold text-bone-muted">
-                Demo
-              </span>
-              <div>
-                <h3 className="font-display text-2xl text-bone-foreground">
-                  Print &amp; marketing collateral
-                </h3>
-                <p className="mt-2 text-sm text-bone-muted">
+            <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
+              <div className="relative">
+                <img
+                  src={samplePrint}
+                  alt="Sample print and marketing collateral design — Haven Solutions"
+                  loading="lazy"
+                  width={1200}
+                  height={912}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <span className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
+                  Demo
+                </span>
+              </div>
+              <figcaption className="p-6">
+                <div className="flex items-center justify-between">
+                  <span className="font-display text-lg">Print &amp; marketing collateral</span>
+                  <span className="eyebrow text-muted-foreground">Sample</span>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground">
                   Flyers, brochures and signage that look as sharp offline as your brand does
                   online.
                 </p>
-              </div>
-            </article>
+              </figcaption>
+            </figure>
             <article className="lift flex flex-col justify-between rounded-3xl border border-border bg-secondary p-7">
               <span className="rounded-full border border-border px-3 py-1 text-[11px] font-semibold text-muted-foreground">
                 Demo
