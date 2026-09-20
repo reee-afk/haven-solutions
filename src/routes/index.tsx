@@ -512,7 +512,7 @@ function Index() {
                 <span className="eyebrow text-muted-foreground">Sample</span>
               </figcaption>
             </figure>
-            <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
+            <figure className="lift self-start overflow-hidden rounded-3xl border border-border bg-card">
               <img
                 src={sampleWebsite}
                 alt="Sample website design — Haven Solutions"
