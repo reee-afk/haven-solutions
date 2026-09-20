@@ -519,7 +519,7 @@ function Index() {
                 loading="lazy"
                 width={1200}
                 height={912}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover object-top"
               />
               <figcaption className="flex items-center justify-between p-6">
                 <span className="font-display text-lg">Website design</span>
