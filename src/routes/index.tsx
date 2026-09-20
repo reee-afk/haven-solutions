@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Clapperboard, Globe, Palette } from "lucide-react";
 import heroGlassCards from "@/assets/hero-glass-cards.png.asset.json";
-import sampleBrand from "@/assets/sample-brand.jpg";
+import sampleBrand from "@/assets/sample-brand.webp";
 import sampleWebsite from "@/assets/sample-website.jpg";
 import sampleSocial from "@/assets/sample-social.jpg";
 
@@ -492,14 +492,19 @@ function Index() {
 
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             <figure className="lift group overflow-hidden rounded-3xl border border-border bg-card md:col-span-2">
-              <img
-                src={sampleBrand}
-                alt="Sample logo and brand identity design — Haven Solutions"
-                loading="lazy"
-                width={1200}
-                height={912}
-                className="aspect-[16/10] w-full object-cover"
-              />
+              <div className="relative">
+                <img
+                  src={sampleBrand}
+                  alt="Sample logo and brand identity design — Haven Solutions"
+                  loading="lazy"
+                  width={1200}
+                  height={912}
+                  className="aspect-[16/10] w-full object-cover"
+                />
+                <span className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
+                  Demo
+                </span>
+              </div>
               <figcaption className="flex items-center justify-between p-6">
                 <span className="font-display text-lg">Brand identity design</span>
                 <span className="eyebrow text-muted-foreground">Sample</span>
