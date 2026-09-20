@@ -5,6 +5,7 @@ import sampleBrand from "@/assets/sample-brand.webp";
 import sampleWebsite from "@/assets/sample-website.webp";
 import sampleSocial from "@/assets/sample-social.webp";
 import samplePrint from "@/assets/sample-print.webp";
+import sampleGoogleBusiness from "@/assets/sample-google-business.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -569,17 +570,30 @@ function Index() {
                 </p>
               </figcaption>
             </figure>
-            <article className="lift flex flex-col justify-between rounded-3xl border border-border bg-secondary p-7">
-              <span className="rounded-full border border-border px-3 py-1 text-[11px] font-semibold text-muted-foreground">
-                Demo
-              </span>
-              <div>
-                <h3 className="font-display text-2xl">Google Business Profile</h3>
+            <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
+              <div className="relative">
+                <img
+                  src={sampleGoogleBusiness}
+                  alt="Sample Google Business Profile optimization — Haven Solutions"
+                  loading="lazy"
+                  width={1200}
+                  height={912}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <span className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
+                  Demo
+                </span>
+              </div>
+              <figcaption className="p-6">
+                <div className="flex items-center justify-between">
+                  <span className="font-display text-lg">Google Business Profile</span>
+                  <span className="eyebrow text-muted-foreground">Sample</span>
+                </div>
                 <p className="mt-2 text-sm text-muted-foreground">
                   A fully optimized profile that helps customers find, trust and choose you first.
                 </p>
-              </div>
-            </article>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
