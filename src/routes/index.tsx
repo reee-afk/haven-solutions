@@ -512,6 +512,20 @@ function Index() {
             </figure>
             <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
               <img
+                src={sampleWebsite}
+                alt="Sample website design — Haven Solutions"
+                loading="lazy"
+                width={1200}
+                height={912}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="flex items-center justify-between p-6">
+                <span className="font-display text-lg">Website design</span>
+                <span className="eyebrow text-muted-foreground">Sample</span>
+              </figcaption>
+            </figure>
+            <figure className="lift overflow-hidden rounded-3xl border border-border bg-card">
+              <img
                 src={sampleSocial}
                 alt="Sample social media content design — Haven Solutions"
                 loading="lazy"
@@ -549,25 +563,6 @@ function Index() {
                 </p>
               </div>
             </article>
-            <figure className="lift group overflow-hidden rounded-3xl border border-border bg-card md:col-span-2 lg:col-span-3">
-              <div className="relative">
-                <img
-                  src={sampleWebsite}
-                  alt="Sample website design — Haven Solutions"
-                  loading="lazy"
-                  width={1200}
-                  height={750}
-                  className="aspect-[16/10] w-full object-cover"
-                />
-                <span className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/40 px-3 py-1 text-[11px] font-semibold text-white backdrop-blur-sm">
-                  Demo
-                </span>
-              </div>
-              <figcaption className="flex items-center justify-between p-6">
-                <span className="font-display text-lg">Website design</span>
-                <span className="eyebrow text-muted-foreground">Sample</span>
-              </figcaption>
-            </figure>
           </div>
         </div>
       </section>
