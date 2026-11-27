@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Bell, Globe, MapPin, MessageSquare } from "lucide-react";
+import { Clapperboard, Globe, Palette } from "lucide-react";
 import heroGlassCards from "@/assets/hero-glass-cards.png.asset.json";
 import sampleBrand from "@/assets/sample-brand.webp";
 import sampleWebsite from "@/assets/sample-website.webp";
@@ -12,21 +12,21 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "Haven Solutions | More customers, fewer no-shows for local businesses",
+        title: "Haven Solutions | Branding, Website Design & Digital Services for Small Businesses",
       },
       {
         name: "description",
         content:
-          "Haven Solutions looks after the website, Google listing, reviews and WhatsApp reminders for local clinics, salons, restaurants, garages and gyms. Book a free 10-minute call.",
+          "We help local businesses grow with professional branding, website design, social media management, and smart automation. Book a free call with Haven Solutions today.",
       },
       {
         property: "og:title",
-        content: "Haven Solutions | More customers, fewer no-shows",
+        content: "Haven Solutions | Branding, Website Design & Digital Services",
       },
       {
         property: "og:description",
         content:
-          "Website, Google listing, reviews and WhatsApp reminders for local clinics, salons, restaurants, garages and gyms.",
+          "Branding, websites and digital systems built for salons, clinics, restaurants and local service businesses.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -66,73 +66,103 @@ function Star({ className = "" }: { className?: string }) {
 
 const painCards = [
   {
-    quote: "Patients forget their appointment and the slot goes empty.",
-    fix: "WhatsApp reminders and confirmations",
+    quote: "My customers keep forgetting their appointments and I lose money every week.",
+    fix: "Automated WhatsApp & SMS Reminder System",
   },
   {
-    quote: "A competitor has 300 Google reviews. We have 6.",
-    fix: "Review requests after every visit",
+    quote: "We have 6 Google reviews. The business down the road has 300.",
+    fix: "Review Generation System",
   },
   {
-    quote: "I miss calls while I'm with a customer.",
-    fix: "Online booking that works 24/7",
+    quote: "Our website looks outdated. I'm embarrassed to send people to it.",
+    fix: "Professional Website Design & Branding",
   },
   {
-    quote: "Our website is old and nobody finds us.",
-    fix: "A professional site and a fixed Google listing",
+    quote: "I post on Instagram sometimes, but it doesn't look consistent or professional.",
+    fix: "Social Media Content & Management",
   },
   {
-    quote: "I post on Instagram when I remember.",
-    fix: "Regular social content",
+    quote: "I have no idea how to get new customers. I rely on word of mouth and hope.",
+    fix: "Client Outreach Pipeline & AI Chatbot",
   },
 ];
 
 const serviceGroups = [
   {
     tag: "01",
-    heading: "A website that works",
-    description: "A fast, clear site that looks good on a phone and turns visitors into bookings.",
-    icon: Globe,
-    services: [],
+    heading: "Build Your Brand",
+    description:
+      "Your brand is the first impression every customer gets. We make sure it's a good one.",
+    icon: Palette,
+    services: [
+      {
+        name: "Logo & Brand Identity",
+        copy: "A professional logo, colour palette, and brand guidelines that make you look established and trustworthy.",
+      },
+      {
+        name: "Print & Marketing Materials",
+        copy: "Business cards, flyers, menus, and banners that match your brand and are print-ready.",
+      },
+      {
+        name: "Email Newsletter Design",
+        copy: "Branded email templates your customers actually want to open.",
+      },
+    ],
   },
   {
     tag: "02",
-    heading: "Get found on Google",
-    description: "We fix your Google listing so local customers find you and choose you.",
-    icon: MapPin,
-    services: [],
+    heading: "Own Your Online Presence",
+    description: "Be easy to find, easy to trust, and easy to book — on every screen.",
+    icon: Globe,
+    services: [
+      {
+        name: "Website Design & Build",
+        copy: "A fast, mobile-friendly, professionally designed website that converts visitors into bookings.",
+      },
+      {
+        name: "Google Business Profile Management",
+        copy: "Get found on Google Maps. We optimise and manage your profile so local customers choose you.",
+      },
+      {
+        name: "Online Booking System",
+        copy: "Let customers book appointments directly from your website, 24/7, with automatic confirmations.",
+      },
+    ],
   },
   {
     tag: "03",
-    heading: "More reviews, handled",
-    description: "We ask happy customers for reviews after every visit, so your rating keeps growing.",
-    icon: MessageSquare,
-    services: [],
-  },
-  {
-    tag: "04",
-    heading: "Fewer no-shows",
-    description: "WhatsApp reminders and confirmations go out automatically, so fewer slots go empty.",
-    icon: Bell,
-    services: [],
+    heading: "Create Your Content",
+    description:
+      "Consistent, on-brand content that keeps your audience engaged and your business top of mind.",
+    icon: Clapperboard,
+    services: [
+      {
+        name: "Social Media Content & Management",
+        copy: "Regular posts, graphics, and captions designed for your brand and scheduled for you.",
+      },
+      {
+        name: "Video Editing",
+        copy: "Short-form videos and reels for Instagram, TikTok, and YouTube Shorts — produced fast, at a fraction of traditional cost.",
+      },
+    ],
   },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "A quick call",
-    copy: "Book a free 10-minute call. No pitch, no pressure. We listen to what your business needs and tell you what we would do.",
+    title: "We Talk",
+    copy: "Book a free 30-minute call. No pitch, no pressure — we listen to what your business needs and tell you exactly what we'd do.",
   },
   {
     n: "02",
-    title: "We set everything up",
-    copy: "We handle the website, Google listing, reviews and reminders. You don't touch a thing.",
+    title: "We Build",
+    copy: "We handle everything. Design, development, content, setup. You don't touch a thing. We keep you updated without overwhelming you.",
   },
   {
     n: "03",
-    title: "It keeps running",
-    copy: "Every month we keep it all working, so reminders go out, reviews come in and customers can find you.",
+    title: "You Grow",
+    copy: "Your brand looks sharp, your systems run automatically, and new customers can find you easily. You focus on what you do best.",
   },
 ];
 
@@ -175,7 +205,7 @@ function Index() {
               href="#contact"
               className="pill-ember px-5 py-2.5 text-sm font-semibold whitespace-nowrap"
             >
-              Book a free call
+              Book a Free Call
             </a>
           </div>
         </nav>
@@ -194,16 +224,15 @@ function Index() {
               More customers. Fewer no-shows. No tech team needed.
             </h1>
             <p className="mt-7 max-w-xl text-[1.0625rem] leading-relaxed text-muted-foreground">
-              Haven Solutions looks after the website, Google listing, reviews and WhatsApp reminders
-              for clinics, salons, restaurants, garages and gyms in Gurgaon, Mohali, Chandigarh and
-              Dehradun.
+              We help businesses attract more customers, build a brand people trust, and run systems
+              that save time — without the complexity.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href="#contact"
                 className="pill-ember px-7 py-3.5 text-sm font-semibold shadow-[var(--shadow-lift)]"
               >
-                Book a free 10-min call
+                Book a Free Call
               </a>
               <a
                 href="#services"
@@ -214,9 +243,9 @@ function Index() {
             </div>
             <ul className="mt-10 space-y-2.5 pb-14 text-sm text-muted-foreground">
               {[
-                "Local businesses only",
-                "One monthly partner",
-                "No long contracts, very low prices for the industry",
+                "Website · Branding · Social Media · Automation",
+                "Built for businesses ready to grow",
+                "No long contracts. Book a free 30-min call.",
               ].map((line) => (
                 <li key={line} className="flex items-center gap-3">
                   <span className="h-px w-6 bg-ember" />
@@ -249,9 +278,9 @@ function Index() {
               {/* editorial stat strip */}
               <div className="grid grid-cols-3 divide-x divide-border px-1 pt-4 pb-2">
                 {[
-                  { k: "One partner", v: "Site · Google · Reviews" },
+                  { k: "One team", v: "Brand · Site · Systems" },
                   { k: "No middlemen", v: "Direct with the team" },
-                  { k: "10 min", v: "Free intro call" },
+                  { k: "30 min", v: "Free strategy call" },
                 ].map((s) => (
                   <div key={s.k} className="px-3 first:pl-2 last:pr-2">
                     <p className="font-display text-base leading-tight font-semibold">{s.k}</p>
@@ -276,8 +305,8 @@ function Index() {
         <div className="mx-auto max-w-[1240px] px-6 py-24">
           <span className="eyebrow text-ember">Sound familiar?</span>
           <h2 className="mt-5 max-w-4xl text-[clamp(1.85rem,4.2vw,3.15rem)]">
-            Good businesses lose customers every day, not because of bad service,{" "}
-            <span className="text-muted-foreground">but because of gaps like these.</span>
+            Good businesses lose customers every day — not because of bad service,{" "}
+            <span className="text-muted-foreground">but because of how they look online.</span>
           </h2>
 
           <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -312,7 +341,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="scroll-mt-24 relative overflow-hidden border-y border-border bg-secondary/40">
+      <section id="services" className="relative overflow-hidden border-y border-border bg-secondary/40">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.035]"
           style={{
@@ -326,17 +355,17 @@ function Index() {
             <div>
               <span className="eyebrow text-ember">What we do</span>
               <h2 className="mt-6 text-[clamp(2.6rem,6.2vw,4.75rem)]">
-                Four fixes that{" "}
-                <span className="text-ember-gradient">fill your diary.</span>
+                Everything your business needs to{" "}
+                <span className="text-ember-gradient">stand out.</span>
               </h2>
             </div>
             <p className="max-w-lg text-lg leading-relaxed text-muted-foreground lg:ml-auto">
-              No overwhelming menus. Four plain things that help local businesses get found, get
-              reviewed and stay booked.
+              No overwhelming menus. Just three focused service pillars that help local businesses
+              look professional, get found, and stay booked.
             </p>
           </div>
 
-          <div className="mt-20 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-20 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {serviceGroups.map((group) => {
               const Icon = group.icon;
               return (
@@ -358,7 +387,7 @@ function Index() {
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {group.description}
                     </p>
-                    <ul className="hidden">
+                    <ul className="mt-8 space-y-4 border-t border-border pt-6">
                       {group.services.map((s) => (
                         <li key={s.name} className="flex gap-3 text-sm">
                           <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ember" />
@@ -381,19 +410,20 @@ function Index() {
       <section className="surface-ink">
         <div className="mx-auto grid max-w-[1240px] gap-8 px-6 py-20 lg:grid-cols-[1fr_1.2fr] lg:items-end">
           <h2 className="text-[clamp(1.6rem,3.2vw,2.4rem)] text-bone-foreground">
-            We set up the systems that run in the background, so you can focus on customers.
+            We also build the systems that run your business in the background.
           </h2>
           <div>
             <p className="text-bone-muted leading-relaxed">
-              WhatsApp reminders and confirmations that cut no-shows. Review requests that turn
-              every happy customer into a 5-star rating. Online booking that works around the
-              clock, even when you are with a customer.
+              Automated appointment reminders via WhatsApp and SMS. AI chatbots that answer
+              questions and capture leads 24/7. Review generation that turns every customer visit
+              into a 5-star rating. Client outreach pipelines that find and email new prospects for
+              you.
             </p>
             <a
               href="#contact"
               className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ember-soft"
             >
-              Book a free 10-min call →
+              Explore our tech services →
             </a>
           </div>
         </div>
@@ -404,6 +434,8 @@ function Index() {
                 {[
                   "WhatsApp reminders",
                   "Review generation",
+                  "AI chatbots",
+                  "Outreach pipelines",
                   "Booking systems",
                   "Google Business Profile",
                 ].map((t) => (
@@ -422,12 +454,12 @@ function Index() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="process" className="scroll-mt-24 border-b border-border">
+      <section id="process" className="border-b border-border">
         <div className="mx-auto max-w-[1240px] px-6 py-24">
-          <span className="eyebrow text-ember">How it works</span>
+          <span className="eyebrow text-ember">The process</span>
           <h2 className="mt-5 max-w-3xl text-[clamp(1.85rem,4.2vw,3.15rem)]">
-            Three steps.{" "}
-            <span className="text-muted-foreground">No technical headaches.</span>
+            Three steps. No technical headaches.{" "}
+            <span className="text-muted-foreground">No confusing jargon.</span>
           </h2>
           <div className="mt-14 grid gap-5 md:grid-cols-3">
             {steps.map((s) => (
@@ -445,7 +477,7 @@ function Index() {
       </section>
 
       {/* PROOF */}
-      <section id="work" className="scroll-mt-24 border-b border-border">
+      <section id="work" className="border-b border-border">
 
         <div className="mx-auto max-w-[1240px] px-6 py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
@@ -569,42 +601,38 @@ function Index() {
       </section>
 
       {/* FINAL CTA */}
-      <section id="contact" className="surface-ink flex min-h-[calc(100svh-6rem)] items-center">
-        <div className="mx-auto w-full max-w-[900px] px-6 pt-36 pb-28 text-center">
+      <section id="contact" className="surface-ink">
+        <div className="mx-auto max-w-[900px] px-6 py-28 text-center">
           <Star className="mx-auto h-5 w-5 text-ember" />
           <h2 className="mt-8 text-[clamp(1.9rem,4.6vw,3.4rem)] text-bone-foreground">
-            Ready to stop losing customers to empty slots and missed calls?
+            Ready to stop losing customers to businesses that just look better?
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-bone-muted">
-            Book a free 10-minute call. We'll take an honest look at your online presence and tell
-            you what is holding your business back. No obligation, no sales pressure.
+            Book a free 30-minute call with our team. We'll take an honest look at your online
+            presence and tell you exactly what's holding your business back — with no obligation and
+            no sales pressure.
           </p>
           <a
             href="mailto:kunallkashyup@gmail.com"
             className="pill-ember mt-9 inline-block px-8 py-4 text-sm font-semibold"
           >
-            Book your free 10-min call
+            Book Your Free Call
           </a>
           <p className="mx-auto mt-6 max-w-lg text-xs text-bone-muted">
-            Prefer to talk in Hindi? Just say so.
-          </p>
-          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
-            Our prices are among the lowest in the industry, so your business can grow without a big
-            spend.
+            Branding, websites and digital systems for businesses that want to grow.
           </p>
           <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
             Email us at{" "}
-            <a href="mailto:kunallkashyup@gmail.com" className="font-semibold text-ember-soft">
+            <a href="mailto:kunallkashyup@gmail.com" className="text-ember">
               kunallkashyup@gmail.com
             </a>
-          </p>
-          <p className="mx-auto mt-3 max-w-lg text-sm text-bone-muted">
+            <br />
             Call or WhatsApp:{" "}
-            <a href="tel:+919871272442" className="font-semibold text-ember-soft">
+            <a href="tel:+919871272442" className="text-ember">
               +91 9871272442
             </a>{" "}
             /{" "}
-            <a href="tel:+918448040163" className="font-semibold text-ember-soft">
+            <a href="tel:+918448040163" className="text-ember">
               +91 8448040163
             </a>
           </p>
@@ -630,8 +658,8 @@ function Index() {
             </a>
           </div>
           <p className="max-w-md text-xs text-muted-foreground">
-            © 2026 Haven Solutions, Gurgaon, India. Website, Google listing, reviews and WhatsApp
-            reminders for local businesses.
+            © 2025 Haven Solutions. Professional branding, website design and digital services for
+            growing businesses.
           </p>
         </div>
       </footer>
