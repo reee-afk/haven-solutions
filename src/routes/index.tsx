@@ -598,6 +598,16 @@ function Index() {
               kunallkashyup@gmail.com
             </a>
           </p>
+          <p className="mx-auto mt-3 max-w-lg text-sm text-bone-muted">
+            Call or WhatsApp:{" "}
+            <a href="tel:+919871272442" className="font-semibold text-ember-soft">
+              +91 9871272442
+            </a>{" "}
+            /{" "}
+            <a href="tel:+918448040163" className="font-semibold text-ember-soft">
+              +91 8448040163
+            </a>
+          </p>
         </div>
       </section>
 
