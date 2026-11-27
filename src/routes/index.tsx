@@ -221,7 +221,7 @@ function Index() {
               <span className="eyebrow text-muted-foreground">Haven Solutions</span>
             </div>
             <h1 className="mt-6 text-[clamp(2.5rem,6.2vw,4.75rem)]">
-              Your Business Deserves to Look as Good as It Is.
+              More customers. Fewer no-shows. No tech team needed.
             </h1>
             <p className="mt-7 max-w-xl text-[1.0625rem] leading-relaxed text-muted-foreground">
               We help businesses attract more customers, build a brand people trust, and run systems
@@ -613,13 +613,32 @@ function Index() {
             no sales pressure.
           </p>
           <a
-            href="mailto:hello@havensolutions.co"
+            href="mailto:kunallkashyup@gmail.com"
             className="pill-ember mt-9 inline-block px-8 py-4 text-sm font-semibold"
           >
             Book Your Free Call
           </a>
           <p className="mx-auto mt-6 max-w-lg text-xs text-bone-muted">
             Branding, websites and digital systems for businesses that want to grow.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
+            Our prices are among the lowest in the industry, so your business can grow without a big
+            spend.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
+            Email us at{" "}
+            <a href="mailto:kunallkashyup@gmail.com" className="text-ember">
+              kunallkashyup@gmail.com
+            </a>
+            <br />
+            Call or WhatsApp:{" "}
+            <a href="tel:+919871272442" className="text-ember">
+              +91 9871272442
+            </a>{" "}
+            /{" "}
+            <a href="tel:+918448040163" className="text-ember">
+              +91 8448040163
+            </a>
           </p>
         </div>
       </section>
