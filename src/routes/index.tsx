@@ -312,7 +312,7 @@ function Index() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="relative overflow-hidden border-y border-border bg-secondary/40">
+      <section id="services" className="scroll-mt-24 relative overflow-hidden border-y border-border bg-secondary/40">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.035]"
           style={{
@@ -422,7 +422,7 @@ function Index() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="process" className="border-b border-border">
+      <section id="process" className="scroll-mt-24 border-b border-border">
         <div className="mx-auto max-w-[1240px] px-6 py-24">
           <span className="eyebrow text-ember">How it works</span>
           <h2 className="mt-5 max-w-3xl text-[clamp(1.85rem,4.2vw,3.15rem)]">
@@ -445,7 +445,7 @@ function Index() {
       </section>
 
       {/* PROOF */}
-      <section id="work" className="border-b border-border">
+      <section id="work" className="scroll-mt-24 border-b border-border">
 
         <div className="mx-auto max-w-[1240px] px-6 py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
@@ -569,8 +569,8 @@ function Index() {
       </section>
 
       {/* FINAL CTA */}
-      <section id="contact" className="surface-ink">
-        <div className="mx-auto max-w-[900px] px-6 py-28 text-center">
+      <section id="contact" className="surface-ink flex min-h-[calc(100svh-6rem)] items-center">
+        <div className="mx-auto w-full max-w-[900px] px-6 pt-36 pb-28 text-center">
           <Star className="mx-auto h-5 w-5 text-ember" />
           <h2 className="mt-8 text-[clamp(1.9rem,4.6vw,3.4rem)] text-bone-foreground">
             Ready to stop losing customers to empty slots and missed calls?
