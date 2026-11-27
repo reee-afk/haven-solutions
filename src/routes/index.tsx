@@ -622,6 +622,10 @@ function Index() {
             Branding, websites and digital systems for businesses that want to grow.
           </p>
           <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
+            Our prices are among the lowest in the industry, so your business can grow without a big
+            spend.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
             Email us at{" "}
             <a href="mailto:kunallkashyup@gmail.com" className="text-ember">
               kunallkashyup@gmail.com
