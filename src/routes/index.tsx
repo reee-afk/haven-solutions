@@ -216,7 +216,7 @@ function Index() {
               {[
                 "Local businesses only",
                 "One monthly partner",
-                "No long contracts",
+                "No long contracts, very low prices for the industry",
               ].map((line) => (
                 <li key={line} className="flex items-center gap-3">
                   <span className="h-px w-6 bg-ember" />
@@ -580,13 +580,23 @@ function Index() {
             you what is holding your business back. No obligation, no sales pressure.
           </p>
           <a
-            href="mailto:hello@havensolutions.co"
+            href="mailto:kunallkashyup@gmail.com"
             className="pill-ember mt-9 inline-block px-8 py-4 text-sm font-semibold"
           >
             Book your free 10-min call
           </a>
           <p className="mx-auto mt-6 max-w-lg text-xs text-bone-muted">
             Prefer to talk in Hindi? Just say so.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
+            Our prices are among the lowest in the industry, so your business can grow without a big
+            spend.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-bone-muted">
+            Email us at{" "}
+            <a href="mailto:kunallkashyup@gmail.com" className="font-semibold text-ember-soft">
+              kunallkashyup@gmail.com
+            </a>
           </p>
         </div>
       </section>
